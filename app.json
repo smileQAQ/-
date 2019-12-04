@@ -8,9 +8,40 @@
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "navigationBarBackgroundColor": "#2b2c33",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "电影",
+      "iconPath": "assets/movie.png",
+      "selectedIconPath": "assets/movieSelect.png"
+    },{
+      "pagePath": "pages/cinema/cinema",
+      "text": "影院",
+      "iconPath": "assets/movie.png",
+      "selectedIconPath": "assets/movieSelect.png"
+    },
+    {
+      "pagePath": "pages/program/program",
+      "text": "演出",
+      "iconPath": "assets/movie.png",
+      "selectedIconPath": "assets/movieSelect.png"
+    },
+    {
+      "pagePath": "pages/match/match",
+      "text": "赛事",
+      "iconPath": "assets/movie.png",
+      "selectedIconPath": "assets/movieSelect.png"
+    },
+    {
+      "pagePath": "pages/userInfo/userInfo",
+      "text": "我的",
+      "iconPath": "assets/movie.png",
+      "selectedIconPath": "assets/movieSelect.png"
+    }],
+    "selectedColor": "#f6524f"
   },
   "sitemapLocation": "sitemap.json"
 }

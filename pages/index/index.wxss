@@ -1,1 +1,132 @@
 /* pages/index/index.wxss */
+.index_tool{
+  text-align: center;
+  margin: 2px;
+}
+.ad_desc, .ad_img, .index_select, .movie_desc{
+  display: inline-block
+}
+
+.index_select_text{
+  display: inline-block;
+  font-weight: bold;
+  color: rgb(82, 82, 82);
+  padding: 2vh;
+}
+radio[checked] + .index_select_text{
+  color: rgb(255, 74, 74);
+  border-bottom: 2px solid rgb(255, 74, 74);
+}
+.index_select radio{
+  display: none
+}
+.searchImg{
+  position: absolute;
+  top: 2vh;
+  right: 2vw;
+  width: 50rpx;
+  height: 50rpx;
+}
+.bannerImg0{
+  background: black
+}
+.bannerImg1{
+  background: bisque
+}
+.bannerImg2{
+  background: blueviolet
+}
+.bannerImg3{
+  background: yellowgreen
+}
+swiper{
+  height: 20vh
+}
+swiper-item[class*="bannerImg"] > view{
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+  line-height: 20vh;
+}
+
+.index_middle{
+  padding: 30rpx;
+  font-size: 24rpx
+}
+
+.Tag_block cover-image{
+  display: inline-block;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+.index_middle text{
+  display: inline-block;
+  margin-top: 20rpx;
+  /* font-family: "新宋体" */
+}
+.Tag_block{
+  display: flex;
+  justify-content: space-between;
+  padding:0 20rpx;
+}
+.ad{
+  position: relative;
+  max-height: 130rpx;
+  margin-top: 40rpx;
+  border-radius: 12rpx;
+  overflow: hidden;
+  background-image: radial-gradient(circle,rgb(252, 252, 252) 20%, #eee)
+}
+.ad cover-image{
+  width: 200rpx;
+  max-height: 130rpx;
+  border-top-left-radius: 12rpx;
+  border-bottom-left-radius: 12rpx;
+}
+.ad_desc{
+  vertical-align: top;
+  padding-left: 40rpx;
+}
+.ad_nameText{
+  font-size: 30rpx;
+  font-weight: 600;
+  letter-spacing: 4rpx;
+}
+.ad_scoreText{
+  font-size: 30rpx;
+  color: orange;
+
+}
+.ad_descText{
+  letter-spacing: 2rpx;
+  color: rgb(139, 139, 139)
+}
+.ad_btn{
+  position: absolute;
+  right: 10rpx;
+  top: 40rpx;
+  padding:.5em 1em; 
+  color: #fff; 
+  background-color: red;
+  border-radius: 8rpx;
+}
+
+.movie_block{
+  padding: 20rpx;
+  border-top: 1px solid rgb(231, 231, 231)
+}
+.movie_block cover-image{
+  display: inline-block;
+  width: 140rpx;
+  vertical-align: top;
+}
+.movie_actor{
+  max-width: 400rpx;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+.movie_desc{
+  margin-left: 20rpx;
+}

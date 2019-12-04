@@ -1,2 +1,72 @@
 <!--pages/index/index.wxml-->
-<text>pages/index/index.wxml</text>
+<view>
+  <view class="index_tool">
+      <view class="city_choose"></view>
+      <view class="index_select">
+        <radio-group>
+          <radio id="s1" value="1" checked></radio>
+          <label for="s1" class="index_select_text">正在上映</label>
+          <radio id="s2" value="2"></radio>
+          <label for="s2" class="index_select_text">即将上映</label>
+        </radio-group>
+      </view>
+      <image src="../../assets/search.png" class="searchImg"></image>
+  </view>
+
+  <view class="index_banner">
+    <swiper indicator-dots="true" autoplay="true"  circular="true" indicator-active-color="#fff" indicator-color="rgba(255,255,255,.3)">
+      <block wx:for="{{movieImg}}" wx:key="*this">
+        <swiper-item class="bannerImg{{index}}">
+          <view>{{index}}</view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <view class="index_middle">
+    <view class="Tag_block">
+      <block wx:for="{{funcTag}}" wx:key="*this" >
+        <view style="text-align: center">
+          <cover-image src="{{item.imgUrl}}"></cover-image>
+          <text>{{item.title}}</text>
+        </view>
+      </block>
+    </view>
+
+    <view class="ad">
+      <view class="ad_img">
+        <cover-image src="{{adMovieData.img}}"></cover-image>
+      </view>
+      <view class="ad_desc">
+        <view>
+          <text class="ad_nameText">{{adMovieData.name}}</text>
+          <text class="ad_scoreText">{{adMovieData.score}}分</text>
+        </view>
+        <view>
+          <text class="ad_descText">{{adMovieData.desc}}</text>
+        </view>
+      </view>
+      <view class="ad_btn">在线播放</view>
+    </view>
+  </view>
+
+  <view class="move-list">
+    <block wx:for="{{movieList}}" wx:key="*this">
+      <view class="movie_block">
+        <cover-image src="{{item.img}}"></cover-image>
+        <view class="movie_desc">
+          <text>{{item.title}}</text>
+          <view>
+            猫眼评分 <text>{{item.score}}分</text>
+          </view>
+          <view class="movie_actor">
+            主演：<text>{{item.actor}}</text>
+          </view>
+          <text>
+            {{item.nearShowTime}}
+          </text>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>
