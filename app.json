@@ -1,7 +1,10 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/program/program",
+    "pages/userInfo/userInfo",
+    "pages/match/match",
+    "pages/cinema/cinema"
   ],
   "window": {
     "backgroundTextStyle": "light",
